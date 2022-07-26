@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "0672c3a766224941b7342ed2e6fbe075",
     "m_Properties": [
@@ -17,6 +17,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "8bd5f31f51484048b270cd473adf3f7e"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "0697d2c284174344b6423e7db0c6948a"
@@ -1167,10 +1173,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "0697d2c284174344b6423e7db0c6948a"
@@ -3293,7 +3300,9 @@
     ],
     "m_PropertyIds": [
         -605930226
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -3367,9 +3376,13 @@
         "m_GuidSerialized": "5bec3cdb-0fcf-464d-9416-f218a059e2f0"
     },
     "m_Name": "Wavelength",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_5709b6040b0549c1b3dfe085eb96aa06",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -3850,7 +3863,9 @@
         787446060,
         565915601,
         -1540249494
-    ]
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -4543,6 +4558,27 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "8bd5f31f51484048b270cd473adf3f7e",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "994558ea86ae4b47904853f71f8ca48d"
+        },
+        {
+            "m_Id": "e784c35d282d46a2b864aeb240adb479"
+        },
+        {
+            "m_Id": "5709b6040b0549c1b3dfe085eb96aa06"
+        },
+        {
+            "m_Id": "f7f7251b37764bccb4f610fa0b7ecdb8"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "8db4811513de442fba3dc7f32a78ddd7",
     "m_Id": -1540249494,
@@ -4833,9 +4869,13 @@
         "m_GuidSerialized": "876e54a1-544d-436a-9613-95ab3adcf488"
     },
     "m_Name": "Direction",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector2_994558ea86ae4b47904853f71f8ca48d",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -6742,9 +6782,13 @@
         "m_GuidSerialized": "810f75df-c078-4461-9a46-7d0e660225b1"
     },
     "m_Name": "Steepness",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_e784c35d282d46a2b864aeb240adb479",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -7055,9 +7099,13 @@
         "m_GuidSerialized": "26fa3ced-705e-4c6c-abca-c2b05194c56f"
     },
     "m_Name": "Speed",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_f7f7251b37764bccb4f610fa0b7ecdb8",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,

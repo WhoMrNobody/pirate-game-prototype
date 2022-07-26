@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaterController : MonoBehaviour
 {   
     public static WaterController current;
-
+    
     [Header("Gerstner Waves Variables")]
     [SerializeField] private GerstnerData[] waveData;
     [SerializeField] private Material material;
@@ -31,7 +31,6 @@ void Awake()
             return data;
         }
 
-        // Debug.LogError("GetDataFromMaterial(): Material is NULL!");
         return waveData;
     }
 

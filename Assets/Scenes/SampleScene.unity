@@ -487,13 +487,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 416473037}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d00f1729b65934687731d5947f05d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 42d408a86abf8a045a6f137db45c3ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 849027881}
   depthBeforeSubmerged: 1
-  displacementValue: 3
-  floaterCount: 4
+  cubeVolume: 3
+  floaterCount: 1
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &498946311
@@ -537,13 +537,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 498946311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d00f1729b65934687731d5947f05d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 42d408a86abf8a045a6f137db45c3ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 849027881}
   depthBeforeSubmerged: 1
-  displacementValue: 3
-  floaterCount: 4
+  cubeVolume: 3
+  floaterCount: 1
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &686607813
@@ -587,13 +587,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 686607813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d00f1729b65934687731d5947f05d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 42d408a86abf8a045a6f137db45c3ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 849027881}
   depthBeforeSubmerged: 1
-  displacementValue: 3
-  floaterCount: 4
+  cubeVolume: 3
+  floaterCount: 1
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &832575517
@@ -681,19 +681,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7994650926060863905, guid: 96609850a858469409f7a1fec052a5f5, type: 3}
---- !u!65 &849027885
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849027878}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.36635783, y: 0.11225281, z: 0.027838519}
-  m_Center: {x: 0.012811092, y: 0.0044157016, z: 0.04620907}
 --- !u!1001 &1158755231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -829,13 +816,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287428675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d00f1729b65934687731d5947f05d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 42d408a86abf8a045a6f137db45c3ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 849027881}
   depthBeforeSubmerged: 1
-  displacementValue: 3
-  floaterCount: 4
+  cubeVolume: 3
+  floaterCount: 1
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!4 &1342419314 stripped
@@ -861,7 +848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1418559349
 Transform:
   m_ObjectHideFlags: 0

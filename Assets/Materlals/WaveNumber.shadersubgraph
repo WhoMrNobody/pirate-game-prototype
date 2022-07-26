@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "0df2031cfc914c8e81a0cf6a18a3e838",
     "m_Properties": [
@@ -8,6 +8,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "a05e2da2fcce445193e703ae1c594da1"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "38afcd10c85641b8b4fd35dd53470f42"
@@ -107,10 +113,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "38afcd10c85641b8b4fd35dd53470f42"
@@ -236,9 +243,13 @@
         "m_GuidSerialized": "93327d03-1cd0-4063-a9d1-5499a7a9de6e"
     },
     "m_Name": "Wavelength",
-    "m_DefaultReferenceName": "",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
+    "m_DefaultReferenceName": "Vector1_14f46da73a8a46a995dfa9f69fa3b403",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -451,6 +462,18 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "a05e2da2fcce445193e703ae1c594da1",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "14f46da73a8a46a995dfa9f69fa3b403"
+        }
+    ]
 }
 
 {
