@@ -35,7 +35,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Displacement:
-        m_Texture: {fileID: 2800000, guid: 5675180b121360c43bf70c708d702265, type: 3}
+        m_Texture: {fileID: 2800000, guid: ff8e08538b65ad9479403db433ecb774, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -67,7 +67,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RefractStrenght: 1
-    - _WaveHeight: 0.05
+    - _WaveHeight: 0.008
     - _Wave_Height: 4
     m_Colors:
     - _Bottom_Color: {r: 0.16015485, g: 0.41327322, b: 0.5566038, a: 0}
