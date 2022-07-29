@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 
 [RequireComponent(typeof(Rigidbody))]
 public class BoatController : MonoBehaviour
@@ -11,18 +11,16 @@ public class BoatController : MonoBehaviour
 	[SerializeField] private float TurningTorque = 50;
     
     private Rigidbody _rigidbody;
-    private PlayerInput _playerInput;
-    private InputAction _move;
     
-
+    
+    
     // Start is called before the first frame update
     private void Awake() {
 
-        _playerInput = GetComponent<PlayerInput>();
         _rigidbody = GetComponent<Rigidbody>();
 
-        _move = _playerInput.actions["MoveForward"];
-        _move.ReadValue<int>();
+       /* _move = _playerInput.actions["MoveForward"];
+        _move.ReadValue<int>();*/
         
     }
     void Start()
@@ -34,31 +32,18 @@ public class BoatController : MonoBehaviour
     void Update()
     {
         
-        if(_move.triggered){
-
-            _move.started += context => OnMoveForward(context);
-        }
-        
     }
 
-    void OnMoveForward(InputAction.CallbackContext ctx)
+    public void MoveForward()
     {
-        _rigidbody.AddForce(ctx.ReadValue<Vector2>() * ForwardForce, ForceMode.Acceleration);
+
+        _rigidbody.AddForce(transform.forward * ForwardForce, ForceMode.Acceleration);
         splash.Play();
         Debug.Log("Button clicked");
+
+        
         /*Vector3 torque = torque = new Vector3(0, TurningTorque, 0);
         rigidbody.AddTorque(torque);*/
     }
 
-    private void OnEnable() {
-
-        _move.Enable();
-        
-    }
-
-    private void OnDisable() {
-
-        _move.Disable();
-        
-    }
 }
