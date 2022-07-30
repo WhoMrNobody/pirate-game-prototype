@@ -7,21 +7,16 @@ using UnityEngine;
 public class BoatController : MonoBehaviour
 {
     [SerializeField] private ParticleSystem splash;
-	[SerializeField] private float ForwardForce = 10;
-	[SerializeField] private float TurningTorque = 50;
+	//[SerializeField] private float forwardForce = 100f;
+	[SerializeField] private float turningTorque = 50f;
     
     private Rigidbody _rigidbody;
+    private ConstantForce _constantForce;
     
-    
-    
-    // Start is called before the first frame update
     private void Awake() {
 
-        _rigidbody = GetComponent<Rigidbody>();
-
-       /* _move = _playerInput.actions["MoveForward"];
-        _move.ReadValue<int>();*/
-        
+        _rigidbody = GetComponent<Rigidbody>(); 
+        _constantForce = GetComponent<ConstantForce>();
     }
     void Start()
     {
@@ -34,13 +29,10 @@ public class BoatController : MonoBehaviour
         
     }
 
-    public void MoveForward()
+    public void MoveForward(float forwardForce)
     {
-
-        _rigidbody.AddForce(transform.forward * ForwardForce, ForceMode.Acceleration);
+        _constantForce.force = new Vector3(0f, 0f, forwardForce);
         splash.Play();
-        Debug.Log("Button clicked");
-
         
         /*Vector3 torque = torque = new Vector3(0, TurningTorque, 0);
         rigidbody.AddTorque(torque);*/
