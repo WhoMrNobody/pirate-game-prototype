@@ -5,15 +5,16 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class BoatController : MonoBehaviour
-{
+{   
+    public static BoatController boatController;
     [SerializeField] private ParticleSystem splash;
-	//[SerializeField] private float forwardForce = 100f;
-	[SerializeField] private float turningTorque = 50f;
+	[SerializeField] private float turningSpeed = 60f;
     
     private Rigidbody _rigidbody;
     private ConstantForce _constantForce;
-    
     private void Awake() {
+
+        boatController = this;
 
         _rigidbody = GetComponent<Rigidbody>(); 
         _constantForce = GetComponent<ConstantForce>();
@@ -23,7 +24,7 @@ public class BoatController : MonoBehaviour
        
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -31,11 +32,15 @@ public class BoatController : MonoBehaviour
 
     public void MoveForward(float forwardForce)
     {
-        _constantForce.force = new Vector3(0f, 0f, forwardForce);
+        _constantForce.relativeForce = new Vector3(0f, 0f, forwardForce);
         splash.Play();
         
-        /*Vector3 torque = torque = new Vector3(0, TurningTorque, 0);
-        rigidbody.AddTorque(torque);*/
+    }
+
+    public void RotateShip(float wheelAngle){
+
+        Vector3 torque = new Vector3(0f, wheelAngle * turningSpeed * Time.deltaTime, 0f);
+        _rigidbody.AddTorque(torque);
     }
 
 }

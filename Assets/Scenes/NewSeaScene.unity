@@ -618,6 +618,7 @@ GameObject:
   - component: {fileID: 668133584}
   - component: {fileID: 668133583}
   - component: {fileID: 668133585}
+  - component: {fileID: 668133587}
   m_Layer: 5
   m_Name: ShipWheel
   m_TagString: Untagged
@@ -634,7 +635,7 @@ RectTransform:
   m_GameObject: {fileID: 668133581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.30165938, y: 0.30165938, z: 0.30165938}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 36388390}
@@ -725,6 +726,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &668133587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668133581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9186ed6b2b69d36458ef25cb061f65c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI_Element: {fileID: 668133583}
+  maximumSteeringAngle: 250
+  wheelReleasedSpeed: 250
 --- !u!64 &987489010
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1689,7 +1705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splash: {fileID: 1901948671}
-  turningTorque: 50
+  turningSpeed: 60
 --- !u!75 &3469287836571241123
 ConstantForce:
   m_ObjectHideFlags: 0
