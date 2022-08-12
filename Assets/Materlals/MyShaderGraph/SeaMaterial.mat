@@ -70,6 +70,6 @@ Material:
     - _WaveHeight: 0.008
     - _Wave_Height: 4
     m_Colors:
-    - _Bottom_Color: {r: 0.16015485, g: 0.41327322, b: 0.5566038, a: 0}
-    - _Top_Color: {r: 0.18155926, g: 0.754717, b: 0.6638622, a: 0}
+    - _Bottom_Color: {r: 0.11690103, g: 0.33059445, b: 0.6698113, a: 0}
+    - _Top_Color: {r: 0.03702387, g: 0.54477185, b: 0.6037736, a: 0}
   m_BuildTextureStacks: []

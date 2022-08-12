@@ -84,7 +84,7 @@ public class WheelController : MonoBehaviour
  
         entry = new EventTrigger.Entry();
         callback = new EventTrigger.TriggerEvent();
-        functionCall = new UnityAction<BaseEventData>( ReleaseEvent );//
+        functionCall = new UnityAction<BaseEventData>( ReleaseEvent );
         callback.AddListener( functionCall );
         entry.eventID = EventTriggerType.PointerUp;
         entry.callback = callback;
@@ -108,7 +108,6 @@ public class WheelController : MonoBehaviour
         Vector2 pointerPos = ( (PointerEventData) eventData ).position;
  
         float wheelNewAngle = Vector2.Angle( Vector2.up, pointerPos - _centerPoint );
-
         
         // Do nothing if the pointer is too close to the center of the wheel
         if( Vector2.Distance( pointerPos, _centerPoint ) > 20f )
